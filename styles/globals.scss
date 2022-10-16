@@ -15,23 +15,22 @@ body {
     width: 100%;
     height: 100vh;
     /* ff 3.6+ */
-    /* ff 3.6+ */
-    background:-moz-linear-gradient(90deg, rgba(161, 0, 255, 1) 0%, rgba(224, 159, 227, 1) 100%); 
+    background:-moz-linear-gradient(90deg, rgba(65, 176, 225, 1) 0%, rgba(86, 88, 252, 1) 100%); 
 
     /* safari 5.1+,chrome 10+ */
-    background:-webkit-linear-gradient(90deg, rgba(161, 0, 255, 1) 0%, rgba(224, 159, 227, 1) 100%);
+    background:-webkit-linear-gradient(90deg, rgba(65, 176, 225, 1) 0%, rgba(86, 88, 252, 1) 100%);
 
     /* opera 11.10+ */
-    background:-o-linear-gradient(90deg, rgba(161, 0, 255, 1) 0%, rgba(224, 159, 227, 1) 100%);
+    background:-o-linear-gradient(90deg, rgba(65, 176, 225, 1) 0%, rgba(86, 88, 252, 1) 100%);
 
     /* ie 6-9 */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#E09FE3', endColorstr='#A100FF', GradientType=0 );
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5658FC', endColorstr='#41B0E1', GradientType=0 );
 
     /* ie 10+ */
-    background:-ms-linear-gradient(90deg, rgba(161, 0, 255, 1) 0%, rgba(224, 159, 227, 1) 100%);
+    background:-ms-linear-gradient(90deg, rgba(65, 176, 225, 1) 0%, rgba(86, 88, 252, 1) 100%);
 
     /* global 94%+ browsers support */
-    background:linear-gradient(90deg, rgba(161, 0, 255, 1) 0%, rgba(224, 159, 227, 1) 100%);
+    background:linear-gradient(90deg, rgba(65, 176, 225, 1) 0%, rgba(86, 88, 252, 1) 100%);
     
     position: fixed;
     left: 0;
