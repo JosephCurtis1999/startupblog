@@ -10,7 +10,7 @@ const Postcard = ({ post }) => {
         <img 
         src={post.featuredImage.url}
         alt={post.title}
-        className= "object-top absolute h-80 w-full object-cover shadow-lg rounded-t-lg lg:rounded-lg" />
+        className= "object-top absolute h-80 w-full object-cover shadow-lg rounded-t-lg lg:rounded-lg imgbw" />
       </div>
       <h1 className='transition duration-500 text-center mb-8 cursor:pointer hover:text-blue-600 text-3xl font-semibold'>
         <Link href={`/post/${post.slug}`}>
@@ -31,7 +31,7 @@ const Postcard = ({ post }) => {
       <p className='text-center text-lg text-black-600 font-normal px-4 lg:px-20 mb-8'>{post.excerpt}</p>
       <div className='text-center'>
         <Link href={`/post/${post.slug}`}>
-          <span className='transition duration-500 transform hover:-translate-y-1 inline-block bg-blue-600 text-lg font-medium rounded-full text-white px-8 py-3 cursor-pointer'>
+          <span className='transition duration-500 transform hover:-translate-y-1 inline-block continue text-lg font-medium rounded-full text-white px-8 py-3 cursor-pointer'>
             Continue Reading
           </span>
         </Link>
