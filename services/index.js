@@ -39,6 +39,45 @@ export const getPosts = async () => {
     return result.postsConnection.edges;
 }
 
+export const getPostsDetails = async (slug) => {
+  const query = gql`
+  query GetPostDetails($slug: String!) {
+    post(where: { slug: $slug }) {
+            author {
+              bio
+              name
+              id
+              photo {
+                url
+              }
+            }
+            createdAt
+            slug
+            title
+            excerpt
+            featuredImage {
+              url
+            }
+            categories {
+              name
+              slug
+            {
+            content {
+                  raw
+                }
+              }
+            
+        
+        
+      
+    }
+  `;
+
+  const result = await request (graphqlAPI, query);
+
+  return result.post;
+}
+
 // get posts by time created
 export const getRecentPosts = async () => {
     const query = gql`
@@ -99,3 +138,4 @@ export const getCategories = async () => {
 
   return result.categories
 }
+
