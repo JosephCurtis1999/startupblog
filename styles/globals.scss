@@ -15,19 +15,22 @@ body {
     width: 100%;
     height: 100vh;
     /* ff 3.6+ */
-    background:-moz-radial-gradient(circle at 50% 50%, rgba(0, 255, 241, 1) 0%, rgba(33, 121, 197, 1) 100%);
+    background:-moz-linear-gradient(180deg, rgba(114, 76, 249, 1) 14%, rgba(255, 34, 119, 1) 100%); 
 
     /* safari 5.1+,chrome 10+ */
-    background:-webkit-radial-gradient(circle at 50% 50%, rgba(0, 255, 241, 1) 0%, rgba(33, 121, 197, 1) 100%);
+    background:-webkit-linear-gradient(180deg, rgba(114, 76, 249, 1) 14%, rgba(255, 34, 119, 1) 100%);
 
     /* opera 11.10+ */
-    background:-o-radial-gradient(circle at 50% 50%, rgba(0, 255, 241, 1) 0%, rgba(33, 121, 197, 1) 100%);
+    background:-o-linear-gradient(180deg, rgba(114, 76, 249, 1) 14%, rgba(255, 34, 119, 1) 100%);
+
+    /* ie 6-9 */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FF2277', endColorstr='#724CF9', GradientType=1 );
 
     /* ie 10+ */
-    background:-ms-radial-gradient(circle at 50% 50%, rgba(0, 255, 241, 1) 0%, rgba(33, 121, 197, 1) 100%);
+    background:-ms-linear-gradient(180deg, rgba(114, 76, 249, 1) 14%, rgba(255, 34, 119, 1) 100%);
 
-    /* global 92%+ browsers support */
-    background:radial-gradient(circle at 50% 50%, rgba(0, 255, 241, 1) 0%, rgba(33, 121, 197, 1) 100%);
+    /* global 94%+ browsers support */
+    background:linear-gradient(180deg, rgba(114, 76, 249, 1) 14%, rgba(255, 34, 119, 1) 100%);
     
     position: fixed;
     left: 0;
@@ -76,16 +79,36 @@ a {
 }
 
 .continue {
-  background-color: rgb(58, 58, 162);
+  background-color: black;
 }
 
-// .imgbw {
-//   filter: grayscale(100%);
-//   -webkit-filter: grayscale(100%);
-//   box-shadow: aqua;
-// }
-
-.title-hover:hover {
-  color: rgb(58, 58, 162);
-  
+.imgbw {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
 }
+
+.continue:hover {
+
+  /* ff 3.6+ */
+  background:-moz-linear-gradient(90deg, rgba(114, 76, 249, 1) 0%, rgba(255, 34, 119, 1) 100%); 
+
+  /* safari 5.1+,chrome 10+ */
+  background:-webkit-linear-gradient(90deg, rgba(114, 76, 249, 1) 0%, rgba(255, 34, 119, 1) 100%);
+
+  /* opera 11.10+ */
+  background:-o-linear-gradient(90deg, rgba(114, 76, 249, 1) 0%, rgba(255, 34, 119, 1) 100%);
+
+  /* ie 6-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FF2277', endColorstr='#724CF9', GradientType=0 );
+
+  /* ie 10+ */
+  background:-ms-linear-gradient(90deg, rgba(114, 76, 249, 1) 0%, rgba(255, 34, 119, 1) 100%);
+
+  /* global 94%+ browsers support */
+  background:linear-gradient(90deg, rgba(114, 76, 249, 1) 0%, rgba(255, 34, 119, 1) 100%);
+
+}
+
+
+
+
