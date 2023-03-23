@@ -79,7 +79,8 @@ a {
 }
 
 .continue {
-  background-color: black;
+  background-color: white;
+  color: black;
 }
 
 .imgbw {
@@ -88,24 +89,8 @@ a {
 }
 
 .continue:hover {
-
-  /* ff 3.6+ */
-  background:-moz-linear-gradient(90deg, rgba(114, 76, 249, 1) 0%, rgba(255, 34, 119, 1) 100%); 
-
-  /* safari 5.1+,chrome 10+ */
-  background:-webkit-linear-gradient(90deg, rgba(114, 76, 249, 1) 0%, rgba(255, 34, 119, 1) 100%);
-
-  /* opera 11.10+ */
-  background:-o-linear-gradient(90deg, rgba(114, 76, 249, 1) 0%, rgba(255, 34, 119, 1) 100%);
-
-  /* ie 6-9 */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FF2277', endColorstr='#724CF9', GradientType=0 );
-
-  /* ie 10+ */
-  background:-ms-linear-gradient(90deg, rgba(114, 76, 249, 1) 0%, rgba(255, 34, 119, 1) 100%);
-
-  /* global 94%+ browsers support */
-  background:linear-gradient(90deg, rgba(114, 76, 249, 1) 0%, rgba(255, 34, 119, 1) 100%);
+  background-color: black;
+  color: white;
 
 }
 
