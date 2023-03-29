@@ -9,6 +9,25 @@ const CommentsForm = ({ slug }) => {
   const emailEl = useRef();
   const storeDataEl = useRef();
 
+  const handleCommentSubmission = () => {
+    setError(false);
+
+    const { value: comment } = commentEl.current;
+    const { value: name } = nameEl.name;
+    const { value: email } = emailEl.current
+
+    if(!comment || !name || !email) {
+      setError(true);
+      return;
+    }
+
+    const commentObj = {
+      name, email, comment, slug
+    };
+
+
+  }
+
 
 
 
@@ -41,7 +60,20 @@ const CommentsForm = ({ slug }) => {
 
         </div>
         <div className='grid grid-cols-1 gap-4 mb-4'>
-
+          <div>
+            <input ref={storeDataEl} type="checkbox" id="storeData" name="storeData" value="true" />
+            <label className='text-white cursor-pointer ml-2' htmlFor='storeData'>Save my e-mail and name for the next time I comment</label>
+          </div>
+        </div>
+        {error && <p className='text-xs text-red-500'>All fields are required</p>}
+        <div className='mt-8'>
+          <button 
+          type='button' 
+          onClick={handleCommentSubmission}
+          className="transition duration-500 ease hover:bg-black hover:text-white inline-block bg-white text-lg rounded-full text-black px-8 py-3 cursor-pointer"
+          >Post Comment
+          </button>
+          {showSuccessMessage && <span className='text-xl float-right font-semibold mt-3 text-green-500'>Comment submitted for review</span>}
         </div>
     </div>
   )
