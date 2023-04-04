@@ -13,7 +13,8 @@ const CommentsForm = ({ slug }) => {
     setError(false);
 
     const { value: comment } = commentEl.current;
-    const { value: name } = nameEl.name;
+    // below line might need to be checked if comments aren't correctly posting to the comments section
+    const { value: name } = nameEl.name; 
     const { value: email } = emailEl.current
 
     if(!comment || !name || !email) {
@@ -32,7 +33,7 @@ const CommentsForm = ({ slug }) => {
 
 
   return (
-    <div className='bg-black bg-opacity-20 text-white rounded-lg p-8 pb-12 mb-8'>
+    <div className='bg-black bg-opacity-30 text-white rounded-lg p-8 pb-12 mb-8'>
         <h3 className='text-xl mb-8 font-semibold border-b pb-4'>Comments Form</h3>
         <div className='grid grid-cols-1 gap-4 mb-4'>
           <textarea 
